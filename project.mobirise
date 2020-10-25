@@ -50,7 +50,17 @@
     "uniqCompNum": 68,
     "versionPublish": "5.1.8",
     "screenshot": "screenshot.png",
-    "imageResize": true
+    "imageResize": true,
+    "favicon": "@PROJECT_PATH@/assets/images/my-pic-auto-x2-removebg-pr2eview-128x129-1.png",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "witsec-mailform": false,
+    "witsec-white-label": false,
+    "witsec-language": false
   },
   "pages": {
     "index.html": {
