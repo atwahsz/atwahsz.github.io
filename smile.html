@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Smiley</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .smiley-container {
+            perspective: 1000px;
+        }
+        .smiley-face {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        .eye {
+            transition: all 0.2s ease;
+        }
+        .mouth {
+            transition: all 0.3s ease;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        .color-picker {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 80px;
+            height: 80px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .color-picker::-webkit-color-swatch {
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+        .color-picker::-moz-color-swatch {
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-yellow-100 to-pink-100 flex flex-col items-center justify-center p-4">
+    <div class="text-center mb-8">
+        <h1 class="text-4xl md:text-6xl font-bold text-yellow-600 mb-2">Smiley Face</h1>
+        <p class="text-lg text-gray-600">Customize your happy face!</p>
+    </div>
+
+    <div class="smiley-container mb-12">
+        <div class="smiley-face relative w-64 h-64 md:w-80 md:h-80 bg-yellow-400 rounded-full shadow-xl border-8 border-yellow-500 flex flex-col items-center justify-center bounce">
+            <div class="eyes flex justify-between w-3/4 mb-8">
+                <div class="eye w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center">
+                    <div class="pupil w-8 h-8 md:w-10 md:h-10 bg-black rounded-full"></div>
+                </div>
+                <div class="eye w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center">
+                    <div class="pupil w-8 h-8 md:w-10 md:h-10 bg-black rounded-full"></div>
+                </div>
+            </div>
+            <div class="mouth w-32 h-16 md:w-40 md:h-20 bg-transparent border-b-8 border-black rounded-b-full"></div>
+        </div>
+    </div>
+
+    <div class="controls bg-white bg-opacity-80 rounded-2xl p-6 shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Customize</h2>
+        
+        <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <div class="flex flex-col items-center">
+                <label class="text-sm font-medium text-gray-600 mb-2">Face Color</label>
+                <input type="color" class="color-picker" value="#fbbf24" id="faceColor">
+            </div>
+            <div class="flex flex-col items-center">
+                <label class="text-sm font-medium text-gray-600 mb-2">Border Color</label>
+                <input type="color" class="color-picker" value="#f59e0b" id="borderColor">
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <label class="block text-sm font-medium text-gray-600 mb-2">Mood</label>
+            <div class="flex justify-center gap-4">
+                <button onclick="setMood('happy')" class="px-4 py-2 bg-green-100 text-green-700 rounded-lg hover:bg-green-200 transition">Happy</button>
+                <button onclick="setMood('sad')" class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition">Sad</button>
+                <button onclick="setMood('neutral')" class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition">Neutral</button>
+                <button onclick="setMood('surprised')" class="px-4 py-2 bg-purple-100 text-purple-700 rounded-lg hover:bg-purple-200 transition">Surprised</button>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <button onclick="randomize()" class="px-6 py-3 bg-gradient-to-r from-pink-400 to-orange-400 text-white rounded-full font-medium hover:from-pink-500 hover:to-orange-500 transition shadow-lg">Randomize!</button>
+        </div>
+    </div>
+
+    <div class="mt-8 text-center text-gray-500 text-sm">
+        <p>Click and drag to tilt the smiley face!</p>
+    </div>
+
+    <script>
+        const smileyFace = document.querySelector('.smiley-face');
+        const faceColorPicker = document.getElementById('faceColor');
+        const borderColorPicker = document.getElementById('borderColor');
+        const mouth = document.querySelector('.mouth');
+        const eyes = document.querySelectorAll('.eye');
+
+        // Color picker functionality
+        faceColorPicker.addEventListener('input', (e) => {
+            smileyFace.style.backgroundColor = e.target.value;
+        });
+
+        borderColorPicker.addEventListener('input', (e) => {
+            smileyFace.style.borderColor = e.target.value;
+        });
+
+        // Mood settings
+        function setMood(mood) {
+            switch(mood) {
+                case 'happy':
+                    mouth.className = 'mouth w-32 h-16 md:w-40 md:h-20 bg-transparent border-b-8 border-black rounded-b-full';
+                    break;
+                case 'sad':
+                    mouth.className = 'mouth w-32 h-16 md:w-40 md:h-20 bg-transparent border-t-8 border-black rounded-t-full';
+                    break;
+                case 'neutral':
+                    mouth.className = 'mouth w-32 h-8 md:w-40 md:h-10 bg-transparent border-b-4 border-black';
+                    break;
+                case 'surprised':
+                    mouth.className = 'mouth w-16 h-16 md:w-20 md:h-20 bg-transparent border-4 border-black rounded-full';
+                    break;
+            }
+        }
+
+        // Randomize function
+        function randomize() {
+            // Random face color
+            const randomFaceColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            smileyFace.style.backgroundColor = randomFaceColor;
+            faceColorPicker.value = randomFaceColor;
+            
+            // Random border color
+            const randomBorderColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            smileyFace.style.borderColor = randomBorderColor;
+            borderColorPicker.value = randomBorderColor;
+            
+            // Random mood
+            const moods = ['happy', 'sad', 'neutral', 'surprised'];
+            const randomMood = moods[Math.floor(Math.random() * moods.length)];
+            setMood(randomMood);
+            
+            // Add bounce effect
+            smileyFace.classList.add('bounce');
+            setTimeout(() => {
+                smileyFace.classList.remove('bounce');
+            }, 2000);
+        }
+
+        // Mouse movement effect
+        document.addEventListener('mousemove', (e) => {
+            const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+            const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+            smileyFace.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+            
+            // Eye movement
+            const eyeX = (window.innerWidth / 2 - e.pageX) / 50;
+            const eyeY = (window.innerHeight / 2 - e.pageY) / 50;
+            eyes.forEach(eye => {
+                eye.style.transform = `translate(${eyeX}px, ${eyeY}px)`;
+            });
+        });
+
+        // Reset position when mouse leaves
+        document.addEventListener('mouseleave', () => {
+            smileyFace.style.transform = 'rotateY(0deg) rotateX(0deg)';
+            eyes.forEach(eye => {
+                eye.style.transform = 'translate(0, 0)';
+            });
+        });
+    </script>
+</body>
+</html>
