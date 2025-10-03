@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AtwahTech - تمكين كفاءة الأعمال بالأتمتة الذكية وتقنية الرؤية الحاسوبية</title>
-<link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <title>AtwahTech - Empowering Business Efficiency with Smart Automation and Computer Vision</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -19,7 +19,7 @@
         .gradient-bg {
             background: linear-gradient(135deg, #187c83 0%, #2a2561 100%);
         }
-.floating {
+        .floating {
             animation: floating 3s ease-in-out infinite;
         }
         @keyframes floating {
@@ -33,32 +33,32 @@
     <!-- Navigation -->
     <nav class="bg-gray-800 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style="position: relative; z-index: 1;">
-<div class="flex justify-between h-16">
+            <div class="flex justify-between h-16">
                 <div class="flex items-center">
                     <div class="relative">
                         <img src="https://raw.githubusercontent.com/atwahsz/atwahsz.github.io/c01eb6de55c40489f65053a6c5baf0b05ea92bac/assets/files/newlogo.svg" alt="AtwahTech Logo" class="relative h-8 w-auto">
                     </div>
-                    <span class="mr-6 text-xl font-bold text-blue-400">AtwahTech</span>
+                    <span class="ml-6 text-xl font-bold text-blue-400">AtwahTech</span>
                     <div class="relative group ml-4">
 <button class="flex items-center text-gray-300 hover:text-blue-400 transition duration-300">
-                            <span>English</span>
+                            <span>العربية</span>
                             <i data-feather="chevron-down" class="w-4 h-4 mr-1"></i>
                         </button>
                         <div class="absolute hidden group-hover:block bg-gray-800 rounded-lg shadow-lg mt-1 w-28 z-50">
-                            <a href="/en" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-blue-400">English</a>
                             <a href="/AI_AGENCY" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-blue-400">العربية</a>
+                            <a href="/AI_AGENCY/en.html" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-blue-400">English</a>
                         </div>
                     </div>
 </div>
-                <div class="hidden md:flex items-center space-x-4 space-x-reverse">
-                    <a href="#features" class="text-gray-300 hover:text-blue-400 transition duration-300">الميزات</a>
-                    <a href="#vision" class="text-gray-300 hover:text-blue-400 transition duration-300">الرؤية الحاسوبية</a>
-                    <a href="#agents" class="text-gray-300 hover:text-blue-400 transition duration-300">العملاء الذكيون</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-blue-400 transition duration-300">الفوائد</a>
-                    <a href="#contact" class="text-gray-300 hover:text-blue-400 transition duration-300">اتصل بنا</a>
-                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">ابدأ مجاناً</button>
-</div>
-<div class="md:hidden flex items-center">
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#features" class="text-gray-300 hover:text-blue-400 transition duration-300">Features</a>
+                    <a href="#vision" class="text-gray-300 hover:text-blue-400 transition duration-300">Computer Vision</a>
+                    <a href="#agents" class="text-gray-300 hover:text-blue-400 transition duration-300">AI Agents</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-blue-400 transition duration-300">Benefits</a>
+                    <a href="#contact" class="text-gray-300 hover:text-blue-400 transition duration-300">Contact Us</a>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Start Free</button>
+                </div>
+                <div class="md:hidden flex items-center">
                     <button id="menu-btn" class="text-gray-300">
                         <i data-feather="menu"></i>
                     </button>
@@ -66,11 +66,12 @@
             </div>
         </div>
     </nav>
+
     <!-- Hero Section -->
     <section class="gradient-bg text-white py-20" style="position: relative; overflow: hidden;">
         <!-- YouTube Video Background -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.2; z-index: 0; overflow: hidden;">
-<iframe 
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.2; z-index: 0; overflow: hidden;" class="hovered-element">
+            <iframe 
                 width="100%" 
                 height="100%" 
                 src="https://www.youtube.com/embed/niApJ9sRXko?autoplay=1&mute=1&loop=1&playlist=niApJ9sRXko&controls=0&showinfo=0&rel=0" 
@@ -80,54 +81,56 @@
                 muted
                 style="pointer-events: none; width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.77vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
             </iframe>
-</div>
+        </div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6">تمكين كفاءة الأعمال بالأتمتة الذكية وتقنية الرؤية الحاسوبية</h1>
-<p class="text-xl mb-8">نهدف إلى تحويل الشركات عبر تقليل العمالة إلى ربع عدد الموظفين وتقليل المصاريف إلى ربع التكلفة</p>
-                    <div class="flex space-x-4 space-x-reverse">
-                        <button class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">ابدأ رحلتك</button>
-                        <button class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">شاهد العرض</button>
-</div>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6">Empowering Business Efficiency with Smart Automation and Computer Vision</h1>
+                    <p class="text-xl mb-8">We aim to transform businesses by reducing labor to a quarter of employees and cutting expenses to a quarter of the cost</p>
+                    <div class="flex space-x-4">
+                        <button class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">Start Your Journey</button>
+                        <button class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">Watch Demo</button>
+                    </div>
                 </div>
                 <div class="md:w-1/2 flex justify-center">
                     <div class="relative">
                         <img src="https://raw.githubusercontent.com/atwahsz/atwahsz.github.io/c01eb6de55c40489f65053a6c5baf0b05ea92bac/assets/files/newlogo.svg" alt="AI Automation" class="relative floating w-4/5 max-w-md">
-</div>
-</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     <!-- About Section -->
     <section class="py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 pt-8">
-<h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">تعمل AtwahTech على تمكين الشركات</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">من خفض التكاليف وتحسين الكفاءة من خلال حلول الأتمتة الذكية والرؤية الحاسوبية المصممة خصيصًا لتلبية احتياجاتها</p>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">AtwahTech Empowers Businesses</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">to reduce costs and improve efficiency through intelligent automation and computer vision solutions tailored to their needs</p>
             </div>
-</div>
+        </div>
     </section>
+
     <!-- Features Section -->
     <section id="features" class="py-20 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">ميزات الذكاء الاصطناعي المتكاملة</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">الذكاء الاصطناعي والرؤية الحاسوبية يستحوذان على السوق بقوة، مما يؤدي إلى شلل الشركات التي لا تتبنى هذه التكنولوجيا</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">Integrated AI Features</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">AI and computer vision are taking the market by storm, causing paralysis for companies that don't adopt this technology</p>
             </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <!-- Feature 1 -->
                 <div class="bg-gray-800 rounded-2xl shadow-lg p-8 hover:shadow-xl transition duration-300">
                     <div class="flex items-center mb-6">
-                    <div class="bg-blue-900 p-3 rounded-lg mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        </svg>
+                        <div class="bg-blue-900 p-3 rounded-lg mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-100">AI-Powered Chat Agents</h3>
                     </div>
-<h3 class="text-2xl font-bold text-gray-100">عملاء الشات المدعوم بالذكاء الاصطناعي</h3>
-                    </div>
-                    <p class="text-gray-300 text-lg">عملاؤنا الذكيون يتجاوزون الدردشة التقليدية. يقومون بأتمتة العمليات الأساسية وتبسيط سير العمل داخل وخارج واجهة الدردشة، مما يعزز الكفاءة ويدير المهام بسلاسة.</p>
-</div>
+                    <p class="text-gray-300 text-lg">Our smart agents go beyond traditional chat. They automate core processes and streamline workflows both inside and outside the chat interface, enhancing efficiency and managing tasks smoothly.</p>
+                </div>
 
                 <!-- Feature 2 -->
                 <div class="bg-gray-800 rounded-2xl shadow-lg p-8 hover:shadow-xl transition duration-300">
@@ -137,9 +140,9 @@
                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                             </svg>
                         </div>
-<h3 class="text-2xl font-bold text-gray-100">حلول الأتمتة المخصصة</h3>
+                        <h3 class="text-2xl font-bold text-gray-100">Custom Automation Solutions</h3>
                     </div>
-                    <p class="text-gray-300 text-lg">نقوم بتصميم أنظمة أتمتة مخصصة للتخلص من العمليات البطيئة وتقليل الحاجة إلى الوظائف التقليدية. اسمح لفريقك بالتركيز على النمو الاستراتيجي بينما يتولى الذكاء الاصطناعي المهام المتكررة.</p>
+                    <p class="text-gray-300 text-lg">We design custom automation systems to eliminate slow processes and reduce the need for traditional jobs. Let your team focus on strategic growth while AI handles repetitive tasks.</p>
                 </div>
             </div>
         </div>
@@ -148,8 +151,8 @@
     <section class="py-16 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">عرض توضيحي للمراقبة الذكية</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">نظام الكشف والتتبع الذكي في الوقت الحقيقي</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">Smart Surveillance Demo</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Real-time detection and tracking system</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <div class="bg-gray-800 rounded-xl shadow-xl overflow-hidden">
@@ -173,14 +176,14 @@
             </div>
 </div>
     </section>
+
     <!-- Main Video Section -->
     <section class="py-16 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">تتبع السلوك والحركة</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">نظام متقدم لتتبع وتحليل السلوك والحركات</p>
-            </div>
-            
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">Behavior & Movement Tracking</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Advanced system for behavior and movement analysis</p>
+</div>
             <div class="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
                 <!-- First Video with Description -->
                 <div class="md:w-1/2 bg-gray-800 rounded-xl shadow-xl overflow-hidden">
@@ -189,19 +192,19 @@
                         Your browser does not support the video tag.
                     </video>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-100 mb-4">نظام تتبع الاختبارات في المدارس والجامعات</h3>
+                        <h3 class="text-xl font-bold text-gray-100 mb-4">Exam Monitoring System for Schools & Universities</h3>
                         <ul class="text-gray-300 space-y-2">
                             <li class="flex items-start">
                                 <i data-feather="check" class="w-5 h-5 mt-1 mr-2 text-green-400 flex-shrink-0"></i>
-                                <span>الكشف عن الغش في الاختبارات في الوقت الفعلي</span>
+                                <span>Real-time cheating detection during exams</span>
                             </li>
                             <li class="flex items-start">
                                 <i data-feather="check" class="w-5 h-5 mt-1 mr-2 text-green-400 flex-shrink-0"></i>
-                                <span>مراقبة سلوك الطلاب خلال الامتحانات</span>
+                                <span>Student behavior monitoring during tests</span>
                             </li>
                             <li class="flex items-start">
                                 <i data-feather="check" class="w-5 h-5 mt-1 mr-2 text-green-400 flex-shrink-0"></i>
-                                <span>تتبع حركات العيون والاتجاهات المشبوهة</span>
+                                <span>Eye movement and suspicious direction tracking</span>
                             </li>
                         </ul>
                     </div>
@@ -214,36 +217,37 @@
                         Your browser does not support the video tag.
                     </video>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-100 mb-4">تحليل السلوك في الأماكن العامة</h3>
+                        <h3 class="text-xl font-bold text-gray-100 mb-4">Behavior Analysis in Public Spaces</h3>
                         <ul class="text-gray-300 space-y-2">
                             <li class="flex items-start">
                                 <i data-feather="check" class="w-5 h-5 mt-1 mr-2 text-green-400 flex-shrink-0"></i>
-                                <span>تحليل المقاهي مع تقارير بسلوك الموظفين والزبائن</span>
+                                <span>Cafe analysis with reports on staff and customer behavior</span>
                             </li>
                             <li class="flex items-start">
                                 <i data-feather="check" class="w-5 h-5 mt-1 mr-2 text-green-400 flex-shrink-0"></i>
-                                <span>تحليل تعابير الوجه ومشاعر الأشخاص</span>
+                                <span>Facial expression and emotion analysis</span>
                             </li>
                             <li class="flex items-start">
                                 <i data-feather="check" class="w-5 h-5 mt-1 mr-2 text-green-400 flex-shrink-0"></i>
-                                <span>تتبع حركة العيون والاتجاهات</span>
+                                <span>Eye movement and direction tracking</span>
                             </li>
                             <li class="flex items-start">
                                 <i data-feather="check" class="w-5 h-5 mt-1 mr-2 text-green-400 flex-shrink-0"></i>
-                                <span>تحليل سلوكيات متعددة الأشخاص في المشهد</span>
+                                <span>Multi-person behavior analysis in the scene</span>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
+</div>
         </div>
     </section>
-<!-- Computer Vision Section -->
-    <section id="vision" class="py-20 bg-gray-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Computer Vision Section -->
+<section id="vision" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">حلول الرؤية الحاسوبية المتقدمة</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">أنظمة المراقبة الذكية والتحليل البصري المدعوم بالذكاء الاصطناعي</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">Advanced Computer Vision Solutions</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">Smart surveillance systems and AI-powered visual analysis</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -256,9 +260,9 @@
                                 <circle cx="12" cy="13" r="4"></circle>
                             </svg>
                         </div>
-<h3 class="text-2xl font-bold text-gray-100">المراقبة الذكية</h3>
+                        <h3 class="text-2xl font-bold text-gray-100">Smart Monitoring</h3>
                     </div>
-                    <p class="text-gray-300 text-lg">أنظمة مراقبة متقدمة تستخدم الرؤية الحاسوبية للكشف عن الحركات غير الطبيعية والتعرف على الوجوه والتحليل السلوكي في الوقت الفعلي.</p>
+                    <p class="text-gray-300 text-lg">Advanced surveillance systems using computer vision to detect abnormal movements, recognize faces, and perform real-time behavioral analysis.</p>
                 </div>
 
                 <!-- Vision Feature 2 -->
@@ -269,9 +273,9 @@
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                             </svg>
                         </div>
-<h3 class="text-2xl font-bold text-gray-100">التحليل الأمني</h3>
+                        <h3 class="text-2xl font-bold text-gray-100">Security Analysis</h3>
                     </div>
-                    <p class="text-gray-300 text-lg">تحليل تلقائي للفيديو للكشف عن التهديدات الأمنية وتحليل أنماط الحركة وتحديد السلوكيات المشبوهة باستخدام خوارزميات متقدمة.</p>
+                    <p class="text-gray-300 text-lg">Automatic video analysis to detect security threats, analyze movement patterns, and identify suspicious behaviors using advanced algorithms.</p>
                 </div>
 
                 <!-- Vision Feature 3 -->
@@ -283,19 +287,20 @@
                                 <polyline points="17 6 23 6 23 12"></polyline>
                             </svg>
                         </div>
-<h3 class="text-2xl font-bold text-gray-100">التقارير الذكية</h3>
+                        <h3 class="text-2xl font-bold text-gray-100">Smart Reporting</h3>
                     </div>
-                    <p class="text-gray-300 text-lg">توليد تقارير تفصيلية مع تحليلات بصرية ورسوم بيانية توضح أنماط النشاط والتوقعات المستقبلية بناءً على البيانات المرئية.</p>
+                    <p class="text-gray-300 text-lg">Generate detailed reports with visual analytics and graphs showing activity patterns and future predictions based on visual data.</p>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- AI Agents Section -->
     <section id="agents" class="py-20 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">العملاء الذكيون المتكاملون</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">أنظمة ذكاء اصطناعي تتفاعل وتتعاون لتحقيق أهداف عملك</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">Integrated Smart Agents</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">AI systems that interact and collaborate to achieve your business goals</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -308,13 +313,13 @@
                                 <circle cx="12" cy="12" r="3"></circle>
                             </svg>
                         </div>
-<h3 class="text-2xl font-bold text-gray-100">عامل المراقبة البصرية</h3>
+                        <h3 class="text-2xl font-bold text-gray-100">Visual Monitoring Agent</h3>
                     </div>
-                    <p class="text-gray-300 text-lg mb-4">يتحلل هذا العامل بيانات الفيديو في الوقت الفعلي، ويكشف عن الأحداث المهمة، ويولد تنبيهات فورية، ويرتبط مع العوامل الأخرى لاتخاذ إجراءات تلقائية.</p>
+                    <p class="text-gray-300 text-lg mb-4">This agent processes real-time video data, detects important events, generates instant alerts, and connects with other agents to take automatic actions.</p>
                     <ul class="text-gray-300 space-y-2">
-                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i> تحليل الفيديو في الوقت الحقيقي</li>
-                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i> الكشف عن الحركة والوجوه</li>
-                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i> التنبيهات الذكية</li>
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i> Real-time video analysis</li>
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i> Motion and face detection</li>
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i> Smart alerts</li>
                     </ul>
                 </div>
 
@@ -335,35 +340,36 @@
                                 <line x1="1" y1="14" x2="4" y2="14"></line>
                             </svg>
                         </div>
-<h3 class="text-2xl font-bold text-gray-100">عامل الأتمتة الذكي</h3>
+                        <h3 class="text-2xl font-bold text-gray-100">Smart Automation Agent</h3>
                     </div>
-                    <p class="text-gray-300 text-lg mb-4">يتعامل مع مهام الأتمتة المعقدة، ويتواصل مع العوامل الأخرى لتنفيذ عمليات متكاملة، ويحسن كفاءة سير العمل بشكل مستمر.</p>
+                    <p class="text-gray-300 text-lg mb-4">Handles complex automation tasks, communicates with other agents to execute integrated processes, and continuously improves workflow efficiency.</p>
                     <ul class="text-gray-300 space-y-2">
-                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i> أتمتة العمليات المتعددة</li>
-                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i> التكامل مع أنظمة الرؤية</li>
-                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i> التعلم المستمر والتحسين</li>
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i> Multi-process automation</li>
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i> Integration with vision systems</li>
+                        <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-green-400"></i> Continuous learning and improvement</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Benefits Section -->
     <section id="benefits" class="py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">لماذا يثق بنا عملاؤنا</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100 mb-4">Why Our Clients Trust Us</h2>
                 <img src="https://aisupervision.org/images/icons/line.svg" alt="Divider" class="mx-auto mb-8">
             </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Benefit 1 -->
                 <div class="text-center">
                     <div class="bg-blue-900 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                         </svg>
-</div>
-                    <h3 class="text-2xl font-bold text-gray-100 mb-4">زيادة الكفاءة</h3>
-                    <p class="text-gray-300">تبسيط عملياتك وتقليل التكاليف من خلال حلولنا المبتكرة</p>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-100 mb-4">Increased Efficiency</h3>
+                    <p class="text-gray-300">Streamline your operations and reduce costs through our innovative solutions</p>
                 </div>
 
                 <!-- Benefit 2 -->
@@ -374,9 +380,9 @@
                             <polyline points="2 17 12 22 22 17"></polyline>
                             <polyline points="2 12 12 17 22 12"></polyline>
                         </svg>
-</div>
-                    <h3 class="text-2xl font-bold text-gray-100 mb-4">قابلية التوسع</h3>
-                    <p class="text-gray-300">تتوسع خدماتنا مع عملك، مما يضمن النجاح على المدى الطويل</p>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-100 mb-4">Scalability</h3>
+                    <p class="text-gray-300">Our services scale with your business, ensuring long-term success</p>
                 </div>
 
                 <!-- Benefit 3 -->
@@ -387,24 +393,26 @@
                             <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                             <line x1="12" y1="17" x2="12.01" y2="17"></line>
                         </svg>
-</div>
-                    <h3 class="text-2xl font-bold text-gray-100 mb-4">دعم الخبراء</h3>
-                    <p class="text-gray-300">نحن نقدم الدعم المستمر لضمان استمرار نجاح عملك</p>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-100 mb-4">Expert Support</h3>
+                    <p class="text-gray-300">We provide ongoing support to ensure your continued business success</p>
                 </div>
             </div>
         </div>
     </section>
-<!-- CTA Section -->
+
+    <!-- CTA Section -->
     <section id="contact" class="py-20 gradient-bg text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">جاهز لتحويل شركتك؟</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">استعن AtwahTech لتساعدك في تقليل التكاليف وتبسيط عملياتك من خلال حلول الذكاء الإصطناعي والرؤية الحاسوبية. استشارتنا المجانية لن تبقى كذلك لفترة طويلة، فاستغل الفرصة الآن.</p>
-            <a href="https://wa.me/966556854566?text=السلام%20عليكم%20ورحمة%20الله%20وبركاته،%0Aأنا%20مهتم%20باستشارتكم%20المجانية.%0A%0Aمع%20الشكر%20والتقدير." target="_blank" 
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Leverage AtwahTech to help you reduce costs and streamline operations through AI and computer vision solutions. Our free consultation won't last long, so take advantage now.</p>
+            <a href="https://wa.me/966556854566?text=Hello%20AtwahTech%2C%0AI'm%20interested%20in%20your%20free%20consultation.%0A%0AThank%20you." target="_blank" 
                class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 inline-block">
-                احصل على استشارة مجانية
+                Get Free Consultation
             </a>
-</div>
+        </div>
     </section>
+
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -412,10 +420,10 @@
                 <div class="mb-6 md:mb-0">
                     <div class="relative inline-block">
                         <img src="https://raw.githubusercontent.com/atwahsz/atwahsz.github.io/c01eb6de55c40489f65053a6c5baf0b05ea92bac/assets/files/newlogo.svg" alt="AtwahTech Logo" class="relative h-6 w-auto inline-block">
-</div>
-<span class="mr-2 text-xl font-bold text-blue-400">AtwahTech</span>
-</div>
-<div class="flex space-x-6 space-x-reverse">
+                    </div>
+                    <span class="ml-2 text-xl font-bold text-blue-400">AtwahTech</span>
+                </div>
+                <div class="flex space-x-6">
                     <a href="#" class="hover:text-blue-400 transition duration-300 w-8 h-8 flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none">
                             <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
@@ -436,29 +444,32 @@
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
                     </a>
-</div>
+                </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p>&copy; 2024 AtwahTech. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2024 AtwahTech. All rights reserved.</p>
             </div>
-</div>
+        </div>
     </footer>
+
     <!-- WhatsApp Floating Button -->
     <div class="fixed bottom-6 right-6 z-50">
-        <a href="https://wa.me/966556854566?text=السلام%20عليكم%20ورحمة%20الله%20وبركاته،%0Aأنا%20مهتم%20بخدماتكم%20وأتطلع%20لمعرفة%20المزيد%20من%20التفاصيل%20حولها.%0A%0Aمع%20الشكر%20والتقدير." target="_blank" 
+        <a href="https://wa.me/966556854566?text=Hello%20AtwahTech%2C%0AI'm%20interested%20in%20your%20services%20and%20would%20like%20to%20know%20more%20details.%0A%0AThank%20you." target="_blank" 
            class="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300 flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
-<span class="mr-2 hidden md:inline">تواصل معنا</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span class="ml-2 hidden md:inline">Contact Us</span>
         </a>
     </div>
-<script>
+
+    <script>
         // Initialize Feather Icons
         feather.replace({
             'message-circle': '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>'
         });
-// Mobile menu toggle
+
+        // Mobile menu toggle
         document.getElementById('menu-btn').addEventListener('click', function() {
             // Add mobile menu functionality here
             alert('Mobile menu would open here');
@@ -476,9 +487,8 @@
             scaleMobile: 1.00,
             color: 0x187c83,
             backgroundColor: 0x2a2561,
-size: 1.00
+            size: 1.00
         });
     </script>
 </body>
 </html>
-
