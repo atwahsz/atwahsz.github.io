@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خطة تمارين 5 أيام — ساعة يومياً</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f4f7f9; --card:#ffffff; --ink:#22303c; --muted:#6b7b8a;
+    --teal:#0e8a8a; --teal-dark:#0a6b6b; --rose:#e0576f; --amber:#f0a13c;
+    --shadow:0 6px 24px rgba(20,40,60,.08); --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Cairo',Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.9}
+  .en{direction:ltr;unicode-bidi:embed;font-weight:700;letter-spacing:.2px}
+  header{
+    background:linear-gradient(135deg,#0e8a8a 0%,#0a5c6b 55%,#123f52 100%);
+    color:#fff;padding:48px 20px 90px;text-align:center;
+  }
+  header h1{font-size:clamp(26px,5vw,42px);font-weight:900}
+  header p{opacity:.92;max-width:640px;margin:10px auto 0;font-size:clamp(15px,2.5vw,18px)}
+  .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+  .badge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);
+    padding:6px 16px;border-radius:999px;font-size:14px;font-weight:600}
+  main{max-width:960px;margin:-55px auto 60px;padding:0 16px}
+
+  .notice{background:#fff8ec;border:1px solid #f3ddba;border-right:5px solid var(--amber);
+    border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow);margin-bottom:26px}
+  .notice strong{color:#9a6712}
+  .notice ul{padding-right:20px;margin-top:8px}
+
+  .day{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);
+    margin-bottom:26px;overflow:hidden}
+  .day-head{display:flex;align-items:center;gap:16px;padding:20px 22px;color:#fff}
+  .d1{background:linear-gradient(135deg,#0e8a8a,#0a6b6b)}
+  .d2{background:linear-gradient(135deg,#e0576f,#b93a55)}
+  .d3{background:linear-gradient(135deg,#f0a13c,#d17c16)}
+  .d4{background:linear-gradient(135deg,#5b6ee1,#3a4bb5)}
+  .d5{background:linear-gradient(135deg,#7a4fc4,#5a34a0)}
+  .day-num{background:rgba(255,255,255,.2);border:1.5px solid rgba(255,255,255,.5);
+    width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+    font-size:24px;font-weight:900;flex-shrink:0}
+  .day-head h2{font-size:clamp(19px,3.5vw,24px);font-weight:900}
+  .day-head .sub{opacity:.9;font-size:14px}
+  .time-strip{display:flex;gap:8px;flex-wrap:wrap;padding:14px 22px;background:#f0f4f6;
+    border-bottom:1px solid #e4ebef;font-size:13.5px;font-weight:600;color:var(--muted)}
+  .time-strip span{background:#fff;border:1px solid #dfe7ec;border-radius:999px;padding:3px 12px}
+
+  table{width:100%;border-collapse:collapse}
+  th{background:#eef4f5;color:var(--teal-dark);font-size:13.5px;padding:10px 14px;text-align:right}
+  td{padding:13px 14px;border-top:1px solid #edf1f4;vertical-align:top;font-size:15px}
+  tr:nth-child(even) td{background:#fafcfd}
+  .ex-name{color:var(--ink);font-size:15.5px}
+  .tag{display:inline-block;font-size:11px;font-weight:700;border-radius:6px;padding:1px 8px;margin-top:4px}
+  .tag.machine{background:#e2f2f2;color:var(--teal-dark)}
+  .tag.free{background:#fde8ec;color:#b93a55}
+  .sets{white-space:nowrap;font-weight:700;color:var(--teal-dark)}
+  .cue{color:var(--muted);font-size:14px}
+  .yt{display:inline-block;margin-top:6px;background:#ff0000;color:#fff;text-decoration:none;
+    font-size:12.5px;font-weight:700;padding:4px 12px;border-radius:8px;direction:ltr}
+  .yt:hover{background:#c00}
+  .footer-note{background:#eaf4f4;border:1px solid #cfe6e6;border-radius:var(--radius);
+    padding:20px 22px;box-shadow:var(--shadow);margin-top:26px}
+  .footer-note h3{color:var(--teal-dark);margin-bottom:8px}
+  .footer-note ul{padding-right:20px}
+  .wrap-table{overflow-x:auto}
+  @media(max-width:640px){
+    td,th{padding:10px 8px;font-size:13.5px}
+    .cue{font-size:12.5px}
+  }
+  @media print{
+    header{padding:24px 12px} main{margin-top:0}
+    .day,.notice,.footer-note{box-shadow:none;border:1px solid #ddd;break-inside:avoid}
+    .yt{background:none;color:#c00;border:1px solid #c00}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏋️‍♀️ خطة تمارين 5 أيام — ساعة واحدة يومياً</h1>
+  <p>برنامج للمبتدئات: ٨٠ كجم / ١٦٥ سم — التركيز على حرق الدهون وبناء القوة تدريجياً وبأمان</p>
+  <div class="badges">
+    <span class="badge">⏱️ 60 دقيقة / اليوم</span>
+    <span class="badge">📅 5 أيام + يومان راحة</span>
+    <span class="badge">💪 مستوى: مبتدئة</span>
+    <span class="badge">🔁 أعيدي البرنامج أسبوعياً</span>
+  </div>
+</header>
+
+<main>
+
+<div class="notice">
+  <strong>⚠️ قبل أن تبدئي — قواعد ذهبية لكل يوم:</strong>
+  <ul>
+    <li><b>الإحماء (10 دقائق):</b> مشي سريع على جهاز <span class="en">AssaultRunner Elite</span> — ابدئي بمشي عادي ثم ارفعي السرعة تدريجياً حتى تشعري بدفء الجسم وتسرّع النفَس قليلاً.</li>
+    <li><b>اختيار الوزن:</b> ابدئي بأخف وزن ممكن. الوزن الصحيح = تستطيعين إنهاء كل التكرارات بحركة صحيحة، مع شعور بتعب بسيط في آخر تكرارين فقط.</li>
+    <li><b>الراحة بين المجموعات:</b> 60–90 ثانية، وتحرّكي قليلاً أثناء الراحة.</li>
+    <li><b>التنفس:</b> ازفير مع المجهود (الدفع/السحب)، وشهيق أثناء العودة. لا تحبسي نفسك أبداً.</li>
+    <li><b>ألم حاد أو دوخة؟</b> توقفي فوراً. الشعور بحرقان العضلة طبيعي، الألم الحاد ليس كذلك.</li>
+    <li><b>الإنهاء (5–10 دقائق):</b> مشي بطيء ثم إطالات خفيفة لكل العضلات التي تدرّبت.</li>
+    <li>اشربي الماء قبل وأثناء وبعد التمرين، وراجعي طبيبك قبل أي برنامج رياضي إذا كانت لديك أي حالة صحية.</li>
+  </ul>
+</div>
+
+<!-- DAY 1 -->
+<div class="day">
+  <div class="day-head d1">
+    <div class="day-num">1</div>
+    <div>
+      <h2>اليوم الأول — الجزء السفلي من الجسم <span class="en">(Lower Body)</span></h2>
+      <div class="sub">الأرجل + المؤخرة — أجهزة + تمرين حر واحد</div>
+    </div>
+  </div>
+  <div class="time-strip"><span>⏱️ إحماء 10 د</span><span>💪 تمارين 40 د</span><span>🧘‍♀️ إطالات 10 د</span></div>
+  <div class="wrap-table">
+  <table>
+    <tr><th>التمرين</th><th>المجموعات × التكرارات</th><th>طريقة الأداء</th></tr>
+    <tr>
+      <td><span class="en ex-name">Leg Press</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 12</td>
+      <td class="cue">اضبطي المقعد بحيث تكون ركبتاكِ بزاوية 90 درجة تقريباً. ادفعي المنصة بكامل القدم (التركيز على الكعب) ولا تفردي الركبتين بالكامل في الأعلى، ثم انزلي ببطء وتحكّم.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Leg Extension</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 12</td>
+      <td class="cue">اضبطي مسند الظهر بحيث تكون ركبتك على محور الجهاز (النقطة البرتقالية)، والوسادة فوق مشط القدم. ارفعي ساقيك حتى شبه الاستقامة، توقفي ثانية، ثم انزلي ببطء.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Leg Curl</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 12</td>
+      <td class="cue">اضبطي الوسادة أسفل الكاحلين مباشرة. اثني ركبتيك نحو الأسفل بقوة عضلات خلف الفخذ، ثم ارجعي ببطء دون أن تلامس الأوزان بعضها.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Hip Adductor / Abductor</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 15 <small>(لكل اتجاه)</small></td>
+      <td class="cue">مرّة تفتحين الركبتين للخارج <span class="en">(Abduction)</span> ومرّة تُغلقينها للداخل <span class="en">(Adduction)</span>. حركة بطيئة ومتقنة، مع شد البطن طوال التمرين.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Glute</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 12 <small>(لكل رجل)</small></td>
+      <td class="cue">اضبطي وسادة الصدر على ارتفاع مريح، ادفعي الساق للخلف والأعلى بعصر عضلة المؤخرة، وتجنبي تقويس أسفل الظهر.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Kettlebell Goblet Squat</span><br><span class="tag free">وزن حر</span><br>
+        <a class="yt" href="https://www.youtube.com/watch?v=j0uIAbrawo4" target="_blank" rel="noopener">▶ YouTube — Jennifer Jacobs</a></td>
+      <td class="sets">2 × 10<br><small>وزن خفيف 4–6 كجم</small></td>
+      <td class="cue">أمسكي الـ<span class="en">Kettlebell</span> بكلتا اليدين أمام صدرك، قدماك بعرض الكتفين. انزلي كأنك تجلسين على كرسي مع إبقاء الصدر مرفوعاً والكعبين على الأرض، ثم قومي بدفع الكعبين.</td>
+    </tr>
+  </table>
+  </div>
+</div>
+
+<!-- DAY 2 -->
+<div class="day">
+  <div class="day-head d2">
+    <div class="day-num">2</div>
+    <div>
+      <h2>اليوم الثاني — صدر + أكتاف + بطن <span class="en">(Push + Core)</span></h2>
+      <div class="sub">تمارين الدفع للجزء العلوي مع تقوية البطن</div>
+    </div>
+  </div>
+  <div class="time-strip"><span>⏱️ إحماء 10 د</span><span>💪 تمارين 40 د</span><span>🧘‍♀️ إطالات 10 د</span></div>
+  <div class="wrap-table">
+  <table>
+    <tr><th>التمرين</th><th>المجموعات × التكرارات</th><th>طريقة الأداء</th></tr>
+    <tr>
+      <td><span class="en ex-name">Chest Press</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 12</td>
+      <td class="cue">اضبطي ارتفاع المقعد حتى تصبح المقابض بمحاذاة منتصف الصدر. ادفعي للأمام دون فرد الكوعين بالكامل، ثم ارجعي ببطء مع إبقاء الظهر ملاصقاً للمسند.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Shoulder Press</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 12</td>
+      <td class="cue">اضبطي المقعد بحيث تكون المقابض عند مستوى الأذن تقريباً. ادفعي للأعلى مع الزفير دون قفل الكوعين، وانزلي ببطء حتى مستوى الأذنين.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Dumbbell Lateral Raise</span><br><span class="tag free">وزن حر</span><br>
+        <a class="yt" href="https://www.youtube.com/watch?v=4p_m96HXMLk" target="_blank" rel="noopener">▶ YouTube — Julie Lohre</a></td>
+      <td class="sets">3 × 12<br><small>دمبل خفيف 1–3 كجم</small></td>
+      <td class="cue">قفي مستقيمة، الدمبل بكل يد بجانب جسمك. ارفعي الذراعين جانبياً حتى مستوى الكتف فقط مع ثني بسيط في الكوع، ثم انزلي ببطء. لا تهزّي جسمك.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Dumbbell Overhead Triceps Extension</span><br><span class="tag free">وزن حر</span><br>
+        <a class="yt" href="https://www.youtube.com/watch?v=-X5il2vPwqU" target="_blank" rel="noopener">▶ YouTube — Krissy Cela</a></td>
+      <td class="sets">2 × 12<br><small>دمبل واحد خفيف</small></td>
+      <td class="cue">أمسكي دمبل واحداً بكلتا اليدين فوق الرأس، اثني الكوعين لينزل الدمبل خلف رأسك، ثم ارفعيه بفرد الذراعين. أبقي المرفقين قريبين من الرأس والبطن مشدودة.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Abdominal</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 15</td>
+      <td class="cue">اضبطي الوسادة أمام صدرك. اثني جذعك للأسفل بعصر عضلات البطن (تخيّلي أنك تُدخلين سرة البطن للداخل)، ثم ارجعي ببطء. لا تدفعي بذراعيك، بل بقوة البطن.</td>
+    </tr>
+  </table>
+  </div>
+</div>
+
+<!-- DAY 3 -->
+<div class="day">
+  <div class="day-head d3">
+    <div class="day-num">3</div>
+    <div>
+      <h2>اليوم الثالث — كارديو + وسط الجسم <span class="en">(Cardio + Core)</span></h2>
+      <div class="sub">يوم حرق الدهون الأهم — إيقاع مريح يمكن الاستمرار عليه</div>
+    </div>
+  </div>
+  <div class="time-strip"><span>⏱️ إحماء 5 د</span><span>🏃‍♀️ كارديو 30 د</span><span>💪 تمارين 15 د</span><span>🧘‍♀️ إطالات 10 د</span></div>
+  <div class="wrap-table">
+  <table>
+    <tr><th>التمرين</th><th>المدة / المجموعات</th><th>طريقة الأداء</th></tr>
+    <tr>
+      <td><span class="en ex-name">AssaultRunner Elite</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">30 دقيقة<br><small>متقطعة</small></td>
+      <td class="cue"><b>نظام 3 + 2:</b> 3 دقائق مشي سريع ثم دقيقتان مشي أسرع (أو هرولة خفيفة جداً إن استطعت)، وكرّريها 6 مرات. هذا الجهاز يتحرك بقوتك أنتِ — كلما وضعتِ قدمك أقرب لمقدمة الحزام زادت السرعة، وللإبطاء اتراجعي للخلف.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Abdominal</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 15</td>
+      <td class="cue">كما في اليوم الثاني: اثني الجذع بعصر البطن، وعودة بطيئة ومتقنة دون استعجال.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Low Back</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 12</td>
+      <td class="cue">على نفس الجهاز، اضبطي الوسادة خلف ظهرك. ادفعي للخلف باستقامة الظهر حتى وضعية معتدلة (لا تبالغي في الانحناء للخلف)، ثم ارجعي ببطء.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Kettlebell Deadlift</span><br><span class="tag free">وزن حر</span><br>
+        <a class="yt" href="https://www.youtube.com/watch?v=dx625LHSQLc" target="_blank" rel="noopener">▶ YouTube — Girls Gone Strong</a></td>
+      <td class="sets">3 × 10<br><small>وزن خفيف 6–8 كجم</small></td>
+      <td class="cue">ضعي الـ<span class="en">Kettlebell</span> بين قدميك. اثني وركيك وركبتيك وأمسكي المقبض بظهر مستقيم تماماً، ثم قومي بدفع الأرض بكعبيك وعصر المؤخرة في الأعلى. الظهر مستقيم طوال الحركة — لا تدوّريه أبداً.</td>
+    </tr>
+  </table>
+  </div>
+</div>
+
+<!-- DAY 4 -->
+<div class="day">
+  <div class="day-head d4">
+    <div class="day-num">4</div>
+    <div>
+      <h2>اليوم الرابع — ظهر + ذراعين <span class="en">(Pull)</span></h2>
+      <div class="sub">تمارين السحب لتقوية الظهر وتحسين الوضعية</div>
+    </div>
+  </div>
+  <div class="time-strip"><span>⏱️ إحماء 10 د</span><span>💪 تمارين 40 د</span><span>🧘‍♀️ إطالات 10 د</span></div>
+  <div class="wrap-table">
+  <table>
+    <tr><th>التمرين</th><th>المجموعات × التكرارات</th><th>طريقة الأداء</th></tr>
+    <tr>
+      <td><span class="en ex-name">Lat Pulldown</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 12</td>
+      <td class="cue">اضبطي وسادة الفخذين فوق رجليك بإحكام. أمسكي البار بقبضة أوسع من الكتفين، اسحبيه لأعلى الصدر مع إنزال الكتفين للأسفل، ثم ارجعي ببطء. لا تسحبي خلف الرقبة.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Seated Row</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 12</td>
+      <td class="cue">على نفس الجهاز: اجلسي بصدر مرفوع، اسحبي المقابض نحو السرة مع تقريب لوحي الكتف من بعضهما، ثم ارجعي ببطء دون تقويس الظهر.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">One-Arm Dumbbell Row</span><br><span class="tag free">وزن حر</span><br>
+        <a class="yt" href="https://www.youtube.com/watch?v=nehAvSrfUOg" target="_blank" rel="noopener">▶ YouTube — Alexandra Wilson</a></td>
+      <td class="sets">3 × 10 <small>(لكل ذراع)</small><br><small>4–6 كجم</small></td>
+      <td class="cue">ساندي يدك وركبتك على مقعد، الظهر مستقيم ومتوازي مع الأرض. اسحبي الدمبل نحو خاصرتك (وليس نحو صدرك) بمرفق قريب من الجسم، ثم انزليه ببطء.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Dumbbell Bicep Curl</span><br><span class="tag free">وزن حر</span><br>
+        <a class="yt" href="https://www.youtube.com/watch?v=Nr-sPLLOIwE" target="_blank" rel="noopener">▶ YouTube — Margaret Martin</a></td>
+      <td class="sets">3 × 12<br><small>2–4 كجم</small></td>
+      <td class="cue">قفي مستقيمة، المرفقان ملتصقان بجانبي جسمك. اثني الذراعين لرفع الدمبل نحو الكتف دون تحريك المرفقين أو تأرجح الجسم، ثم انزلي ببطء حتى فرد كامل تقريباً.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Low Back</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">2 × 12</td>
+      <td class="cue">إنهاء خفيف لأسفل الظهر: ادفعي للخلف بتحكم وارجعي ببطء، مع الحفاظ على بطن مشدودة.</td>
+    </tr>
+  </table>
+  </div>
+</div>
+
+<!-- DAY 5 -->
+<div class="day">
+  <div class="day-head d5">
+    <div class="day-num">5</div>
+    <div>
+      <h2>اليوم الخامس — الجسم كاملاً بالأوزان الحرة <span class="en">(Full Body Free Weights)</span></h2>
+      <div class="sub">يوم الدمبل والـKettlebell — حرق عالٍ وتنسيق حركي</div>
+    </div>
+  </div>
+  <div class="time-strip"><span>⏱️ إحماء 10 د</span><span>💪 تمارين 40 د</span><span>🧘‍♀️ إطالات 10 د</span></div>
+  <div class="wrap-table">
+  <table>
+    <tr><th>التمرين</th><th>المجموعات × التكرارات</th><th>طريقة الأداء</th></tr>
+    <tr>
+      <td><span class="en ex-name">Kettlebell Goblet Squat</span><br><span class="tag free">وزن حر</span><br>
+        <a class="yt" href="https://www.youtube.com/watch?v=j0uIAbrawo4" target="_blank" rel="noopener">▶ YouTube — Jennifer Jacobs</a></td>
+      <td class="sets">3 × 12<br><small>6–8 كجم</small></td>
+      <td class="cue">الـ<span class="en">Kettlebell</span> ممسوك أمام الصدر بكلتا اليدين. انزلي بوركيك للخلف والأسفل مع صدر مرفوع وركبتين باتجاه أطراف القدمين، ثم قومي بقوة من الكعبين.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Dumbbell Romanian Deadlift</span><br><span class="tag free">وزن حر</span><br>
+        <a class="yt" href="https://www.youtube.com/watch?v=68DCrZYEtus" target="_blank" rel="noopener">▶ YouTube — Strong Curves</a></td>
+      <td class="sets">3 × 12<br><small>دمبلان 4–6 كجم</small></td>
+      <td class="cue">دمبل بكل يد أمام فخذيك. ادفعي وركيك للخلف مع ثني بسيط في الركبتين وانزلي الدمبلين على طول الساقين حتى منتصف الساق مع ظهر مستقيم، ثم ارجعي بعصر المؤخرة. ستشعرين بشدّ في خلف الفخذ — هذا صحيح.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Chest Press</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">3 × 12<br><small>وزن خفيف</small></td>
+      <td class="cue">تمرين الصدر بالجهاز كما في اليوم الثاني، بوزن مريح لأن هذا اليوم يجمع الجسم كله.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Dumbbell Shoulder Press</span><br><span class="tag free">وزن حر</span><br>
+        <a class="yt" href="https://www.youtube.com/watch?v=_oPmqC02OwA" target="_blank" rel="noopener">▶ YouTube — Emily Duncan</a></td>
+      <td class="sets">3 × 10<br><small>2–4 كجم</small></td>
+      <td class="cue">اجلسي على مقعد بظهر مستقيم (أو واقفة). الدمبلان عند مستوى الأذنين، ادفعيهما للأعلى حتى شبه فرد الذراعين، ثم انزلي ببطء. أبقي البطن مشدودة ولا تقوّسي أسفل الظهر.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Farmer's Carry</span> <small>(مع Kettlebell أو Dumbbell)</small><br><span class="tag free">وزن حر</span><br>
+        <a class="yt" href="https://www.youtube.com/watch?v=TAyXUvNdOG0" target="_blank" rel="noopener">▶ YouTube — Betsy Collie</a></td>
+      <td class="sets">3 × 30–40 خطوة</td>
+      <td class="cue">أمسكي وزناً بكل يد بجانب جسمك، وقفي بأطول قامة ممكنة مع شد البطن، ثم امشي بخطوات هادئة ومستقيمة. تمرين ممتاز للبطن والقوة العامة وحرق السعرات.</td>
+    </tr>
+    <tr>
+      <td><span class="en ex-name">Glute</span><br><span class="tag machine">جهاز</span></td>
+      <td class="sets">2 × 12 <small>(لكل رجل)</small></td>
+      <td class="cue">إنهاء للمؤخرة: ادفعي الساق للخلف بعصر العضلة، دون تقويس الظهر.</td>
+    </tr>
+  </table>
+  </div>
+</div>
+
+<div class="footer-note">
+  <h3>📌 نصائح للأسبوع كاملاً</h3>
+  <ul>
+    <li><b>يوما الراحة:</b> ضعيهما بين الأيام التدريبية قدر الإمكان (مثلاً: تمرين السبت–الأحد–الاثنين، راحة الثلاثاء، تمرين الأربعاء–الخميس، راحة الجمعة). في يوم الراحة يكفي مشي خفيف 20–30 دقيقة.</li>
+    <li><b>التدرج:</b> عندما تستطيعين إنهاء كل المجموعات والتكرارات بسهولة مرتين متتاليتين، زيدي الوزن قليلاً (أصغر زيادة متاحة).</li>
+    <li><b>ألم العضلات</b> في اليومين الأولين طبيعي جداً لأنك بدأتِ قبل 3 أيام — خففي الوزن إن كان شديداً، ولا تتوقفي تماماً عن الحركة.</li>
+    <li><b>التغذية:</b> التمرين وحده لا يكفي لخسارة الوزن — ركّزي على البروتين (دجاج، سمك، بيض، زبادي يوناني) وقللي السكريات والمشروبات الغازية والمقليات.</li>
+    <li><b>النوم:</b> 7–8 ساعات يومياً تسرّع حرق الدهون واستشفاء العضلات.</li>
+    <li><b>القياس:</b> لا تزني نفسك يومياً — مرة واحدة أسبوعياً صباحاً، والتقطي صوراً شهرية لمقارنة التقدم.</li>
+  </ul>
+</div>
+
+</main>
+</body>
+</html>
